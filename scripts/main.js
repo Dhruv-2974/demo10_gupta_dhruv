@@ -86,7 +86,7 @@ function populateCardsDynamically() {
 
   db.collection("Hikes")
     .orderBy("length") //NEW LINE;  what do you want to sort by?
-    .limit(2) //NEW LINE:  how many do you want to get?
+    .limit(3) //NEW LINE:  how many do you want to get?
     .get()
     .then((allHikes) => {
       allHikes.forEach((doc) => {
